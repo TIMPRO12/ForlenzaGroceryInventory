@@ -14,4 +14,7 @@
   - View the current inventory.
   - Search for items by name.
 
+  ## Version 2.1
+- 2024-10-17
+- 
 
