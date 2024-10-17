@@ -63,7 +63,11 @@ while True:
         name = input("Enter item name: ")
         price = input("Enter item price: ")
         quantity = int(input("Enter item quantity: "))
-        add_item(inventory, name, price, quantity)
+        checkpoint = input("Are you sure you want to add this? (Yes or No)") #this asks the user as a form of confimtion
+        if checkpoint == "Yes":                         #if they say yes then it adds the item to the list
+            add_item(inventory, name, price, quantity)
+        elif checkpoint == "No":                        #if no then it doesn't add it to the list and allow's the user to continue using it.
+            print("Ok")                                 
     elif choice == "2":
         name = input("Enter item name to remove: ")
         remove_item(inventory, name)
